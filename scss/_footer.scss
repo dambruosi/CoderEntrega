@@ -1,0 +1,66 @@
+footer{
+
+    background-color: $Violet;
+    height: 35%;
+    position: sticky;
+
+    img{
+        width: 150px;
+        }
+
+    ul li{
+        list-style: none;
+        color:$letraWhite;
+        border-radius: 10px;
+    }
+
+    li:hover{ color:cyan;
+    }
+    
+
+}
+
+//BEM//
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    font-family: $fontMain
+}
+
+.footer__icono--tamaño{
+    font-size: 3rem;
+    display: inline;
+    margin: 1rem;
+}
+
+.footer__item--margen{
+    margin: 70px 20px 70px 20px
+}
+
+//TRANSFORMACIONES//
+
+@keyframes movimiento-lateral{
+    from { 
+    left:0 px;
+    }
+    to{
+    left:50px;
+    }
+    }
+
+    .iconosAni:hover{
+    animation-name: movimiento-lateral;
+    animation :1s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    position: relative;
+    width:100px;
+    height: auto;
+    cursor: pointer;
+    }
+
+
+    
+
+

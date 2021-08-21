@@ -1,0 +1,34 @@
+
+header{
+
+    img{
+    width:40%;
+    height: auto;
+    background-color: $portadaFondo;
+    padding: 30px;
+    border-radius: 15px;
+    }
+}
+
+
+//BEM//
+
+
+.portada{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 30px;
+
+}
+
+.portada__text--fuente{
+    font-family:$fontPortada;
+    color:$mainColor;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,66 @@
+
+@import "contenido";
+@import "tipografia";
+@import "nav";
+@import "footer";
+@import "header";
+
+
+//variables de colores//
+
+$mainColor:darkmagenta;
+
+$fondoPro: #FA8BFF;
+
+$Violet:#b881ec;
+
+$letraWhite: white;
+
+//imagen de portada//
+
+$portadaFondo: #b881ec;
+
+
+//fondos extendidos//
+
+.card-1{
+    @extend.card;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 26%, #ffffff 43%, #af87d6 66%);
+    border-radius: 15px;
+}
+
+
+//ANIMACIONES//
+
+.card:hover {
+    transform: scale(1.05, 1.08);
+    cursor: pointer;
+    }
+
+
+
+@mixin reset-text {
+    font-family: $fontMain;
+    // We deliberately do NOT reset font-size or overflow-wrap / word-wrap.
+    font-style: $fontMain;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-base;
+    text-align: left; // Fallback for where `start` is not supported
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+}
+
+
+a {
+    color: white;
+    text-decoration: none; }
+    a:hover {
+    color: cyan; }
